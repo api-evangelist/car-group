@@ -1,0 +1,18 @@
+generated: '2026-10-21'
+method: none
+status: none
+search_result:
+  official_hosted_server: none
+  probes:
+  - url: https://cargroup.com/.well-known/mcp.json
+    method: GET
+    status: 404
+  searches:
+  - query: carsales OR "CAR Group" OR Encar OR "Trader Interactive" MCP server model context protocol
+    result: No first-party MCP server found for CAR Group or its marketplaces (carsales, Encar, Trader Interactive, chileautos, webmotors).
+  finding: CAR Group publishes no public developer portal, OpenAPI contract or MCP server (pre-flight contract discovery on cargroup.com and api.cargroup.com found none), so there is nothing to derive a candidate tool list from.
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []

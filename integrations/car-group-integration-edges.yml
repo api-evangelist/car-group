@@ -1,0 +1,24 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/car-group/integrations
+- https://n8n.io/integrations/car-group/
+- https://composio.dev/toolkits/car-group
+- https://monid.ai/tools/car-group
+checked:
+- https://zapier.com/apps/carsales/integrations
+- https://www.make.com/en/integrations/carsales
+- https://n8n.io/integrations/carsales/
+- https://www.workato.com/integrations/carsales
+- https://cargroup.com/
+- https://composio.dev/toolkits/car-group
+- https://monid.ai/tools/car-group
+- https://n8n.io/integrations/car-group/
+- https://zapier.com/apps/car-group/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: No marketplace listing, integrations/partners page or API contract was found. CAR Group's site (cargroup.com)
+  is an investor/corporate site with no developer or integrations section; no OpenAPI is held. make.com answered
+  403 (unverified, not evidence of a listing).

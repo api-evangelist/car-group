@@ -1,23 +1,85 @@
 aid: car-group
+
 name: CAR Group
-description: 'CAR Group is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: CAR Group Limited (formerly carsales.com Limited, renamed 2023) is an ASX 50 company operating online vehicle marketplaces across Oceania, Asia and the Americas. It wholly owns carsales (Australia), Encar (South Korea), Trader Interactive (United States) and chileautos (Chile), and is majority shareholder of webmotors (Brazil), delivering technology and advertising solutions for buying and selling vehicles. Its corporate/investor site is cargroup.com.
+
 url: https://raw.githubusercontent.com/api-evangelist/car-group/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Automotive
+- Marketplaces
+- Classifieds
+- Advertising
+- Australia
+- ASX
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://cargroup.com/wp-content/uploads/2025/08/Car-Group-logo-update.png
+
 common:
+- type: Hosts
+  url: hosts/car-group-hosts.yml
+- type: Vendors
+  url: vendors/car-group-vendors.yml
+- type: DomainSecurity
+  url: security/car-group-domain-security.yml
 - type: Website
   url: https://cargroup.com/
+- type: Contact
+  url: https://cargroup.com/contact-us/
+- type: Leadership
+  url: https://cargroup.com/management/
+- type: News
+  url: https://cargroup.com/asx-announcements/
+- type: TermsOfService
+  url: https://cargroup.com/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://cargroup.com/privacy-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/car-group
+- type: GitHubOrganization
+  url: https://github.com/carsales
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: cargroup.com titled "CAR Group Investor" names CAR Group and its marketplaces; no public developer portal, API docs, pricing or signup found on the site or via search. GitHub org carsales (carsales.com Ltd, the former company name) links carsales.com.au.
+  evidence:
+  - url: https://cargroup.com/
+    status: 200
+  - url: https://cargroup.com/contact-us/
+    status: 200
+  - url: https://cargroup.com/asx-announcements/
+    status: 200
+  - url: https://www.linkedin.com/company/car-group
+    status: 200
+  - url: https://api.github.com/orgs/carsales
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

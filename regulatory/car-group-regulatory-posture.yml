@@ -1,0 +1,71 @@
+generated: '2026-10-21'
+method: searched
+source:
+- https://cargroup.com/privacy-policy/
+- https://cargroup.com/terms-and-conditions/
+scope: >-
+  CAR Group's corporate/investor site (cargroup.com). The privacy policy covers personal information
+  collected via the investor website and related services, under the Australian Privacy Act and APPs.
+  Marketplace brands (carsales, Encar, Trader Interactive, webmotors, chileautos) have their own policies,
+  not read here. The terms-and-conditions page was read and adds no signal beyond referencing the privacy policy.
+signals:
+  data_subject_request:
+    url: https://cargroup.com/privacy-policy/
+    section: How do I access my information?
+    note: >-
+      Individuals have a right to access and update their personal information (subject to legal exceptions),
+      and may request deletion or de-identification via a linked form; access fees may apply but not for making the request.
+    evidence:
+    - source: https://cargroup.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: You generally have a right to access your personal information and update your personal information, subject to a few exceptions provided by law.
+    - source: https://cargroup.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: Depending on the volume, type or method of access to the information you request, CAR Group may charge you some fees, however, these will not be excessive, will be notified in advance, and will not apply to the making of the request.
+    - source: https://cargroup.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "You can also request deletion or de-identification of your personal information\u00a0 here ."
+  data_retention:
+    url: https://cargroup.com/privacy-policy/
+    section: How do I keep my personal information up to date?
+    note: >-
+      Retention is purpose-based with no stated periods: data may be destroyed or de-identified when no longer
+      required, and some data may be kept for business records even after a deletion request.
+    evidence:
+    - source: https://cargroup.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: CAR Group may destroy or de-identify personal information once the information is no longer deemed required by the business or there is no legal obligation to retain the personal information.
+    - source: https://cargroup.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: Please note that CAR Group is permitted to retain certain personal information for the purposes notified to you under this policy, including for example to maintain appropriate business records.
+  data_residency:
+    url: https://cargroup.com/privacy-policy/
+    section: Is my personal information shared outside of Australia?
+    note: >-
+      No residency commitment. The policy discloses cross-border transfer to service providers in named countries
+      and treats providing information as consent to transfer outside Australia.
+    evidence:
+    - source: https://cargroup.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: Some of CAR Group’s service providers are located outside Australia, including in the United States of America, Brazil, Chile, Mexico, India, South Korea and Singapore.
+    - source: https://cargroup.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: By providing CAR Group with your personal information, you consent to the disclosure and transfer of your personal information outside Australia as set out in this privacy policy.
+  subprocessors:
+    url: https://cargroup.com/privacy-policy/
+    section: How is my personal information shared?
+    note: >-
+      Only categories of recipients are given (group companies, IT providers, professional advisers); no named
+      subprocessor list is published. CAR Group states it takes reasonable steps to bind data service providers to the Privacy Act/APPs.
+    evidence:
+    - source: https://cargroup.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: Where CAR Group discloses your personal information to a data service provider, CAR Group will take all reasonable steps to ensure those data service providers comply at all times with the Privacy Act and the APPs, or equivalent laws.
